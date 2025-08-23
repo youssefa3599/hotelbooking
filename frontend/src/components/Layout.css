@@ -1,0 +1,28 @@
+/* src/components/layout.css */
+
+.background-container {
+  background-image: url("/picm.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%; /* changed from 100vw */
+  padding-top: 80px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Reset root styles for Login/Register */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  box-sizing: border-box;
+}

@@ -1,0 +1,98 @@
+/* src/BookingPage.css */
+
+.booking-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.booking-page h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.booking-page p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.room-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.room-card {
+  width: calc(50% - 10px);
+  background: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.room-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.room-info {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.room-info h3 {
+  margin: 0 0 10px;
+}
+
+.room-info p {
+  margin: 0 0 15px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.room-select label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.room-quantity {
+  margin-top: 10px;
+}
+
+.room-quantity input {
+  width: 60px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.book-btn {
+  margin-top: 30px;
+  padding: 15px 25px;
+  font-size: 16px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #005fcc;
+}

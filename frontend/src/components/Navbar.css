@@ -1,0 +1,101 @@
+.navbar {
+  background-color: #6a0dad;
+  color: white;
+  padding: 1.5rem 2rem; /* padding defines height */
+  box-sizing: border-box;
+  border-bottom: 4px solid #4b0082;
+  position: relative;
+  z-index: 10; /* stay above background image */
+}
+
+/* Flex container for navbar content, centered with max width */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* ✅ allow wrapping on small screens */
+}
+
+/* Navbar title styling */
+.navbar-title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex: 1 1 100%; /* ✅ takes full width on small screens */
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Brand link styling with underline and hover color */
+.navbar-brand-link {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand-link:hover,
+.navbar-brand-link:focus {
+  color: #ffd700; /* gold hover */
+  outline: none;
+}
+
+/* Container for navigation links and logout button */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  flex: 1 1 100%; /* ✅ full width on mobile */
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ prevent overflow */
+}
+
+/* Links and buttons styled to look uniform */
+.navbar-links a,
+.navbar-links button {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus,
+.navbar-links button:hover,
+.navbar-links button:focus {
+  color: #d1b3ff;
+  outline: none;
+}
+
+/* Logout button hover and focus */
+.logout-button:hover,
+.logout-button:focus {
+  color: #ffcccc;
+  outline: none;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .navbar-links {
+    flex-direction: column; /* ✅ stack vertically on phones */
+    gap: 12px;
+  }
+}

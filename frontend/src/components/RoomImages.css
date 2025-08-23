@@ -1,0 +1,24 @@
+.room-images {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.room-images.one {
+  grid-template-columns: 1fr;
+}
+
+.room-images.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.room-images.three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.room-image-preview {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}

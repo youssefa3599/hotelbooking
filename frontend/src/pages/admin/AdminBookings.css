@@ -1,0 +1,28 @@
+.admin-bookings-container {
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.admin-bookings-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.booking-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.booking-card p {
+  margin: 0.3rem 0;
+}
+
+.status-paid {
+  color: green;
+  font-weight: bold;
+}

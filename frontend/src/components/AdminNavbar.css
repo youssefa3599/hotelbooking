@@ -1,0 +1,80 @@
+.admin-navbar {
+  background-color: #6b21a8; /* Tailwind's purple-800 */
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ allows wrapping on small screens */
+}
+
+.admin-navbar-title {
+  flex: 1 1 100%; /* full width on small screens */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.admin-navbar-brand-link {
+  color: white !important;
+  text-decoration: underline !important;
+  text-decoration-color: white !important;
+  text-underline-offset: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Links container */
+.admin-navbar-links {
+  display: flex;
+  flex: 1 1 100%; /* take full width on mobile */
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap; /* ✅ prevent overflow */
+}
+
+.admin-navbar-links a {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.admin-navbar-links a:hover {
+  color: #e9d5ff; /* Tailwind's purple-200 */
+}
+
+/* Logout button */
+.admin-logout-button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.admin-logout-button:hover {
+  color: #fca5a5; /* light red hover */
+}
+
+/* 📱 Mobile-specific tweaks */
+@media (max-width: 768px) {
+  .admin-navbar {
+    padding: 12px;
+  }
+
+  .admin-navbar-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .admin-navbar-links {
+    flex-direction: column; /* ✅ stack vertically on phones */
+    align-items: center;
+    gap: 10px;
+  }
+}
